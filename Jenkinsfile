@@ -8,7 +8,6 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 sh './gradlew build'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
         stage('Build Docker Image') {
