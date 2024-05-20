@@ -23,7 +23,7 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	archiveFileName = "trainSchedule.zip"
+	archiveBaseName = "trainSchedule.zip"
 	destinationDirectory = layout.buildDirectory.dir('dist')
 }
 
